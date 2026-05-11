@@ -175,10 +175,10 @@ Tópicos em ordem:
 | 3 | [003-alcanos-nomenclatura-propriedades.md](quimica/serie_03/aulas/003-alcanos-nomenclatura-propriedades.md) | Alcanos — nomenclatura e propriedades |
 | 4 | [004-alcenos-e-alcinos.md](quimica/serie_03/aulas/004-alcenos-e-alcinos.md) | Alcenos e alcinos |
 | 5 | [005-aromaticos-benzeno.md](quimica/serie_03/aulas/005-aromaticos-benzeno.md) | Aromáticos — benzeno e derivados |
-| 6 | [006-reacoes-combustao-e-substituicao.md](quimica/serie_03/aulas/006-reacoes-combustao-e-substituicao.md) | Reações de combustão e substituição |
-| 7 | [007-reacoes-de-adicao.md](quimica/serie_03/aulas/007-reacoes-de-adicao.md) | Reações de adição |
-| 8 | [008-isomeria-parte-1.md](quimica/serie_03/aulas/008-isomeria-parte-1.md) | Isomeria — parte 1 (constitucional) |
-| 9 | [009-isomeria-parte-2.md](quimica/serie_03/aulas/009-isomeria-parte-2.md) | Isomeria — parte 2 (espacial) |
+| 6 | [006-petroleo.md](quimica/serie_03/aulas/006-petroleo.md) | Petróleo — origem, composição e refino |
+| 7 | [007-gas-natural.md](quimica/serie_03/aulas/007-gas-natural.md) | Gás natural — composição e usos |
+| 8 | [008-metano.md](quimica/serie_03/aulas/008-metano.md) | Metano — estrutura, propriedades e impacto |
+| 9 | [009-seminario.md](quimica/serie_03/aulas/009-seminario.md) | Seminário — Hidrocarbonetos no cotidiano |
 | 10 | [010-avaliacao-bimestral.md](quimica/serie_03/aulas/010-avaliacao-bimestral.md) | Avaliação Bimestral |
 | 11 | [011-reavaliacao-bimestral.md](quimica/serie_03/aulas/011-reavaliacao-bimestral.md) | Reavaliação Bimestral |
 
