@@ -70,6 +70,14 @@
       .hab-chips, .hab-edit-btn { display: none !important; }
       .hab-print { display: block !important; }
     }
+      /* recal-v1 */
+    .recal-line { font-size: 9pt; color: #1e4d8c; margin-top: 8px; line-height: 1.4; border-top: 1px dashed #c6d8f0; padding-top: 5px; }
+    .recal-line strong { color: #1e4d8c; }
+    .hab-chips { display: flex; flex-direction: column; gap: 4px; flex-wrap: nowrap; }
+    .hab-row { display: flex; align-items: flex-start; gap: 8px; }
+    .hab-desc { font-size: 8.5pt; color: #444; line-height: 1.35; flex: 1; padding-top: 1px; }
+    .avaliacao-bloco p { margin: 0 0 6px 0; line-height: 1.45; }
+    .avaliacao-bloco p:last-child { margin-bottom: 0; }
   </style>
 </head>
 <body>
@@ -148,6 +156,7 @@
             <span class="info-label">Códigos das competências e habilidades BNCC/ReCAL:</span>
             <div class="info-value hab-cell" id="bncc-cell">
               <div class="hab-chips"></div>
+              <!-- recal-v1 --><div class="recal-line" contenteditable="true"><strong>ReCAL:</strong> Mostrar a relevância das marés para pescadores e marisqueiras de regiões estuarinas e costeiras.</div>
               <button class="hab-edit-btn" onclick="openHabModal(document.getElementById('bncc-cell'))">＋ habilidades</button>
               <div class="hab-print"></div>
             </div>
@@ -223,17 +232,12 @@ Encerrar com: "Qual aspecto das marés você nunca tinha pensado antes?"</div>
 
         <div class="full-section medium">
           <div class="section-label">Avaliação e feedback formativo:</div>
-          <div class="section-content" contenteditable="true">Durante a explicação:
-• Perguntar: "Se a Lua está a 90° da Terra em relação ao Sol (quarto crescente), a maré de hoje será maior ou menor do que na Lua Cheia?" — verificar se compreenderam sizígia × quadratura.
-
-Atividade de interpretação de gráfico:
-• Verificar se os alunos identificaram corretamente os horários de preamar e correlacionaram amplitude com fase da Lua; fornecer feedback imediato.
-
-Tarefa para casa:
-• Consultar a tábua de marés para o próximo final de semana e determinar o melhor horário para ir à praia se quiser nadar (maré baixa) ou pescar (preamar recuando para baixamar — peixes seguem a maré). Justificar com base no aprendizado.
-
-Critérios:
-• Correto entendimento do mecanismo dos bojos; capacidade de leitura de tábua/gráfico de marés; relação com vida prática.</div>
+          <div class="section-content" contenteditable="true"><!-- avaliacao-v1 -->
+<p><strong>INTEGRAÇÃO COM O TERRITÓRIO:</strong> Estudar a influência da Lua nas marés da costa alagoana (Pajuçara, Praia do Francês, Maragogi).</p>
+<p><strong>INTEGRAÇÃO TECNOLÓGICA:</strong> Tábua de marés online da Marinha do Brasil para o porto de Maceió.</p>
+<p><strong>PROTAGONISMO:</strong> Estudantes analisam tábua de marés real e relacionam com fases lunares.</p>
+<p><strong>ADAPTAÇÃO EDUCAÇÃO ESPECIAL:</strong> Tabela simplificada com cores indicando maré alta e baixa.</p>
+<p><strong>OUTROS:</strong> </p></div>
         </div>
 
         <div class="full-section small">
@@ -269,92 +273,92 @@ Critérios:
       { code: 'EM13CNT305', area: 'CN', desc: 'Investigar e discutir o uso indevido de conhecimentos das Ciências da Natureza na justificativa de processos de discriminação, como o racismo científico, e para avaliar criticamente esses usos na produção do conhecimento científico atual.' },
       { code: 'EM13CNT306', area: 'CN', desc: 'Avaliar os riscos envolvidos em atividades cotidianas, aplicando conhecimentos das Ciências da Natureza, para justificar o uso de equipamentos e de comportamentos de segurança, como o uso de protetor solar, de máscara, de óculos de segurança e de outros equipamentos de proteção individual (EPI), para manipulação de produtos químicos e quando se pratica atividades físicas, trânsito, práticas laboratoriais, entre outras.' },
       { code: 'EM13CNT307', area: 'CN', desc: 'Analisar as condições de saúde da comunidade, levando em conta fatores como saneamento, moradia, condições nutricionais e exposição a fatores de risco, para propor e/ou apoiar ações de promoção da saúde e do bem-estar.' },
-      { code: 'EM13MAT101', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT102', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT103', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT201', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT203', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT301', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT302', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT303', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT304', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT305', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT306', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT307', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT308', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT309', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT310', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT311', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT312', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT313', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT314', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT315', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT316', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT401', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT402', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT403', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT404', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT405', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT406', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT407', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT501', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13MAT502', area: 'MAT', desc: 'Habilidade de Matemática e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS101', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS102', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS103', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS104', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS105', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS106', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS201', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS202', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS203', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS204', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS205', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS206', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS301', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS302', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS303', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS304', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS305', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS306', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS401', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS402', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS403', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS501', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS502', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS503', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS504', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS601', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS602', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS603', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS604', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS605', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13CHS606', area: 'CHS', desc: 'Habilidade de Ciências Humanas e Sociais Aplicadas da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG101', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG102', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG103', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG104', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG201', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG202', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG203', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG204', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG301', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG302', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG303', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG304', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG401', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG402', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG403', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG501', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG502', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG503', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG601', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG602', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG603', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG701', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG702', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG703', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
-      { code: 'EM13LGG704', area: 'LGG', desc: 'Habilidade de Linguagens e suas Tecnologias da BNCC para o Ensino Médio.' },
+      { code: 'EM13MAT101', area: 'MAT', desc: 'Interpretar criticamente situações econômicas, sociais e fatos relativos às Ciências da Natureza que envolvam a variação de grandezas, pela análise dos gráficos das funções representadas e das taxas de variação, com ou sem apoio de tecnologias digitais.' },
+      { code: 'EM13MAT102', area: 'MAT', desc: 'Analisar tabelas, gráficos e amostras de pesquisas estatísticas apresentadas em relatórios divulgados por diferentes meios de comunicação, identificando, quando for o caso, inadequações que possam induzir a erros de interpretação, como escalas e amostras não apropriadas.' },
+      { code: 'EM13MAT103', area: 'MAT', desc: 'Interpretar e compreender textos científicos ou divulgados pelas mídias, que empregam unidades de medida de diferentes grandezas e as conversões possíveis entre elas, adotadas ou não pelo Sistema Internacional (SI), como as de armazenamento e velocidade de transferência de dados.' },
+      { code: 'EM13MAT201', area: 'MAT', desc: 'Propor ou participar de ações adequadas às demandas da região, preferencialmente para sua comunidade, envolvendo medições e cálculos de perímetro, de área, de volume, de capacidade ou de massa.' },
+      { code: 'EM13MAT203', area: 'MAT', desc: 'Aplicar conceitos matemáticos no planejamento, execução e análise de ações envolvendo a utilização de aplicativos e a criação de planilhas (para o controle de orçamento familiar, simuladores de cálculos de juros simples e compostos, entre outros), para tomar decisões.' },
+      { code: 'EM13MAT301', area: 'MAT', desc: 'Resolver e elaborar problemas do cotidiano, da Matemática e de outras áreas do conhecimento, que envolvem equações lineares simultâneas, usando técnicas algébricas e gráficas, com ou sem apoio de tecnologias digitais.' },
+      { code: 'EM13MAT302', area: 'MAT', desc: 'Construir modelos empregando as funções polinomiais de 1º ou 2º graus, para resolver problemas em contextos diversos, com ou sem apoio de tecnologias digitais.' },
+      { code: 'EM13MAT303', area: 'MAT', desc: 'Interpretar e comparar situações que envolvam juros simples com as que envolvem juros compostos, por meio de representações gráficas ou análise de planilhas, destacando o crescimento linear ou exponencial de cada caso.' },
+      { code: 'EM13MAT304', area: 'MAT', desc: 'Resolver e elaborar problemas com funções exponenciais nos quais seja necessário compreender e interpretar a variação das grandezas envolvidas, em contextos como o da Matemática Financeira e o do crescimento de seres vivos microscópicos, entre outros.' },
+      { code: 'EM13MAT305', area: 'MAT', desc: 'Resolver e elaborar problemas com funções logarítmicas nos quais seja necessário compreender e interpretar a variação das grandezas envolvidas, em contextos como os de abalos sísmicos, pH, radioatividade, Matemática Financeira, entre outros.' },
+      { code: 'EM13MAT306', area: 'MAT', desc: 'Resolver e elaborar problemas em contextos que envolvem fenômenos periódicos reais, como ondas sonoras, ciclos menstruais, movimentos cíclicos, entre outros, e comparar suas representações com as funções seno e cosseno, no plano cartesiano, com ou sem apoio de aplicativos de álgebra e geometria.' },
+      { code: 'EM13MAT307', area: 'MAT', desc: 'Empregar diferentes métodos para a obtenção da medida da área de uma superfície (reconfigurações, aproximação por cortes etc.) e deduzir expressões de cálculo para aplicá-las em situações reais (como o remanejamento e a distribuição de plantações, entre outros), com ou sem apoio de tecnologias digitais.' },
+      { code: 'EM13MAT308', area: 'MAT', desc: 'Aplicar as relações métricas, incluindo as leis do seno e do cosseno ou as noções de congruência e semelhança, para resolver e elaborar problemas que envolvem triângulos, em variados contextos.' },
+      { code: 'EM13MAT309', area: 'MAT', desc: 'Resolver e elaborar problemas que envolvem o cálculo de áreas totais e de volumes de prismas, pirâmides e corpos redondos em situações reais, como o cálculo do gasto de material para forrações ou pinturas de objetos cujos formatos sejam composições dos sólidos estudados.' },
+      { code: 'EM13MAT310', area: 'MAT', desc: 'Resolver e elaborar problemas de contagem envolvendo agrupamentos ordenáveis ou não de elementos, por meio dos princípios multiplicativo e aditivo, recorrendo a estratégias diversas como o diagrama de árvore.' },
+      { code: 'EM13MAT311', area: 'MAT', desc: 'Identificar e descrever o espaço amostral de eventos aleatórios, realizando contagem das possibilidades, para resolver e elaborar problemas que envolvem o cálculo da probabilidade.' },
+      { code: 'EM13MAT312', area: 'MAT', desc: 'Resolver e elaborar problemas que envolvem o cálculo da probabilidade de eventos aleatórios, identificando e descrevendo o espaço amostral e realizando contagem das possibilidades.' },
+      { code: 'EM13MAT313', area: 'MAT', desc: 'Utilizar, quando necessário, a notação científica para expressar uma medida, compreendendo as noções de algarismos significativos e algarismos duvidosos, e reconhecendo que toda medida é inevitavelmente acompanhada de erro.' },
+      { code: 'EM13MAT314', area: 'MAT', desc: 'Resolver e elaborar problemas que envolvem grandezas determinadas pela razão ou pelo produto de outras (velocidade, densidade demográfica, energia elétrica etc.).' },
+      { code: 'EM13MAT315', area: 'MAT', desc: 'Investigar e registrar, por meio de um fluxograma, quando possível, um algoritmo que resolve um problema.' },
+      { code: 'EM13MAT316', area: 'MAT', desc: 'Resolver e elaborar problemas, em diferentes contextos, que envolvem cálculo e interpretação das medidas de tendência central (média, moda, mediana) e das medidas de dispersão (amplitude, variância e desvio padrão).' },
+      { code: 'EM13MAT401', area: 'MAT', desc: 'Converter representações algébricas de funções polinomiais de 1º grau em representações geométricas no plano cartesiano, distinguindo os casos nos quais o comportamento é proporcional, recorrendo ou não a softwares ou aplicativos de álgebra e geometria dinâmica.' },
+      { code: 'EM13MAT402', area: 'MAT', desc: 'Converter representações algébricas de funções polinomiais de 2º grau em representações geométricas no plano cartesiano, distinguindo os casos nos quais uma variável for diretamente proporcional ao quadrado da outra, recorrendo ou não a softwares ou aplicativos de álgebra e geometria dinâmica, entre outros materiais.' },
+      { code: 'EM13MAT403', area: 'MAT', desc: 'Analisar e estabelecer relações, com ou sem apoio de tecnologias digitais, entre as representações de funções exponencial e logarítmica expressas em tabelas e em plano cartesiano, para identificar as características fundamentais (domínio, imagem, crescimento) de cada função.' },
+      { code: 'EM13MAT404', area: 'MAT', desc: 'Analisar funções definidas por uma ou mais sentenças (tabela do Imposto de Renda, contas de luz, água, gás etc.), em suas representações algébrica e gráfica, identificando domínios de validade, imagem, crescimento e decrescimento, e convertendo essas representações de uma para outra, com ou sem apoio de tecnologias digitais.' },
+      { code: 'EM13MAT405', area: 'MAT', desc: 'Reconhecer funções definidas por uma ou mais sentenças (como a função modular, as funções definidas por partes), suas representações algébrica e gráfica e utilizá-las para modelar situações em contextos diversos.' },
+      { code: 'EM13MAT406', area: 'MAT', desc: 'Construir e interpretar tabelas e gráficos de frequências com base em dados obtidos em pesquisas por amostras estatísticas, incluindo ou não o uso de softwares que inter-relacionem estatística, geometria e álgebra.' },
+      { code: 'EM13MAT407', area: 'MAT', desc: 'Interpretar e comparar conjuntos de dados estatísticos por meio de diferentes diagramas e gráficos (histograma, de caixa (box-plot), de ramos e folhas, entre outros), reconhecendo os mais eficientes para sua análise.' },
+      { code: 'EM13MAT501', area: 'MAT', desc: 'Investigar relações entre números expressos em tabelas para representá-los no plano cartesiano, identificando padrões e criando conjecturas para generalizar e expressar algebricamente essa generalização, reconhecendo quando essa representação é de função polinomial de 1º grau.' },
+      { code: 'EM13MAT502', area: 'MAT', desc: 'Investigar relações entre números expressos em tabelas para representá-los no plano cartesiano, identificando padrões e criando conjecturas para generalizar e expressar algebricamente essa generalização, reconhecendo quando essa representação é de função polinomial de 2º grau do tipo y = ax².' },
+      { code: 'EM13CHS101', area: 'CHS', desc: 'Identificar, analisar e comparar diferentes fontes e narrativas expressas em diversas linguagens, com vistas à compreensão e à crítica de ideias filosóficas e processos e eventos históricos, geográficos, políticos, econômicos, sociais, ambientais e culturais.' },
+      { code: 'EM13CHS102', area: 'CHS', desc: 'Identificar, analisar e discutir as circunstâncias históricas, geográficas, políticas, econômicas, sociais, ambientais e culturais da emergência de matrizes conceituais (etnocentrismo, racismo, evolução, modernidade, cooperativismo/desenvolvimentismo etc.), avaliando criticamente seu significado histórico e comparando-as a narrativas que contemplem outros agentes e discursos.' },
+      { code: 'EM13CHS103', area: 'CHS', desc: 'Elaborar hipóteses, selecionar evidências e compor argumentos relativos a processos políticos, econômicos, sociais, ambientais, culturais e epistemológicos, com base na sistematização de dados e informações de natureza qualitativa e quantitativa (expressões artísticas, textos filosóficos e sociológicos, documentos históricos, gráficos, mapas, tabelas etc.).' },
+      { code: 'EM13CHS104', area: 'CHS', desc: 'Analisar objetos e vestígios da cultura material e imaterial de modo a identificar conhecimentos, valores, crenças e práticas que caracterizam a identidade e a diversidade cultural de diferentes sociedades inseridas no tempo e no espaço.' },
+      { code: 'EM13CHS105', area: 'CHS', desc: 'Identificar, contextualizar e criticar tipologias evolutivas (como populações nômades e sedentárias, entre outras) e oposições dicotômicas (cidade/campo, cultura/natureza, civilizados/bárbaros etc.), explicitando suas ambiguidades.' },
+      { code: 'EM13CHS106', area: 'CHS', desc: 'Utilizar as linguagens cartográfica, gráfica e iconográfica e/ou recursos das tecnologias digitais de informação e comunicação de forma crítica, significativa, reflexiva e ética nas diversas práticas sociais, incluindo as escolares.' },
+      { code: 'EM13CHS201', area: 'CHS', desc: 'Analisar e caracterizar as dinâmicas das populações, das mercadorias e do capital nos diversos continentes, com destaque para a mobilidade e a fixação de pessoas, grupos humanos e povos, em função de eventos naturais, políticos, econômicos, sociais, religiosos e culturais, identificando as transformações provocadas por essas dinâmicas.' },
+      { code: 'EM13CHS202', area: 'CHS', desc: 'Analisar e avaliar os impactos econômicos e socioambientais de cadeias produtivas ligadas à exploração de recursos naturais e às atividades agropecuárias em diferentes ambientes e escalas, bem como propor ações que estimulem o consumo responsável.' },
+      { code: 'EM13CHS203', area: 'CHS', desc: 'Comparar os significados de território, fronteiras, vazio (geográfico, econômico, demográfico etc.), limites, regionalização, divisão política e influência geopolítica, e suas conotações ao longo do tempo e em diferentes lugares, e discutir os conflitos delas decorrentes.' },
+      { code: 'EM13CHS204', area: 'CHS', desc: 'Comparar e avaliar os processos de ocupação do espaço e a formação de territórios, territorialidades e fronteiras, identificando o papel de diferentes agentes (como grupos sociais e culturais, impérios, Estados Nacionais e organismos internacionais) e considerando os conflitos populacionais, a diversidade étnico-cultural e as desigualdades sociais.' },
+      { code: 'EM13CHS205', area: 'CHS', desc: 'Analisar a produção de diferentes territorialidades em suas dimensões culturais, econômicas, ambientais, políticas e sociais, no Brasil e no mundo contemporâneo, com destaque para as culturas juvenis.' },
+      { code: 'EM13CHS206', area: 'CHS', desc: 'Compreender e aplicar os princípios de localização, distribuição, ordem, extensão, conexão e escalas (geográfica e temporal) entre elementos no espaço-tempo, para análise e representação de fenômenos sociais, naturais e histórico-geográficos.' },
+      { code: 'EM13CHS301', area: 'CHS', desc: 'Problematizar hábitos e práticas individuais e coletivos de produção, reaproveitamento e descarte de resíduos em metrópoles, áreas urbanas e rurais, e comunidades com diferentes graus de desenvolvimento econômico e tecnológico, para desenvolver e/ou promover ações que estimulem o consumo responsável e ético.' },
+      { code: 'EM13CHS302', area: 'CHS', desc: 'Analisar e avaliar criticamente os impactos econômicos e socioambientais de cadeias produtivas ligadas à exploração de recursos naturais (sobretudo a água) e às atividades agropecuárias em diferentes ambientes e escalas, identificando os geradores e beneficiários dos lucros gerados nessas cadeias.' },
+      { code: 'EM13CHS303', area: 'CHS', desc: 'Debater e avaliar o papel da indústria cultural e das mídias na formação dos valores éticos e estéticos, bem como na construção das identidades pessoais e coletivas, na difusão de comportamentos, consumismo e preconceitos e na manipulação da opinião pública.' },
+      { code: 'EM13CHS304', area: 'CHS', desc: 'Analisar os impactos socioambientais decorrentes de práticas de instituições governamentais, de empresas e de indivíduos, discutindo as origens dessas práticas, identificando e selecionando aquelas que respeitem a vida e promovam o bem-estar individual e coletivo.' },
+      { code: 'EM13CHS305', area: 'CHS', desc: 'Analisar e discutir o papel e as competências legais dos organismos nacionais e internacionais de regulação, controle e fiscalização ambiental, e dos acordos internacionais para a promoção e a garantia de práticas ambientais sustentáveis.' },
+      { code: 'EM13CHS306', area: 'CHS', desc: 'Contextualizar, comparar e avaliar os impactos de diferentes modelos socioeconômicos no uso dos recursos naturais e na promoção da sustentabilidade econômica e socioambiental do planeta.' },
+      { code: 'EM13CHS401', area: 'CHS', desc: 'Identificar e analisar as relações entre sujeitos, grupos, classes sociais e sociedades com culturas distintas diante das transformações técnicas, tecnológicas e informacionais, e das novas formas de trabalho ao longo do tempo, em diferentes espaços (urbanos e rurais) e contextos.' },
+      { code: 'EM13CHS402', area: 'CHS', desc: 'Analisar e comparar indicadores e dinâmicas das relações de trabalho e dos trabalhadores ao longo da história, em diferentes espaços (especialmente o brasileiro) e contextos econômicos e tecnológicos, considerando a forma como interferem nas dinâmicas de produção e circulação de pessoas, bens, mercadorias e informações.' },
+      { code: 'EM13CHS403', area: 'CHS', desc: 'Caracterizar e analisar os impactos das transformações tecnológicas nas relações sociais e de trabalho próprias da contemporaneidade, promovendo ações voltadas à superação das desigualdades sociais, da opressão e da violação dos Direitos Humanos.' },
+      { code: 'EM13CHS501', area: 'CHS', desc: 'Analisar os fundamentos da ética em diferentes culturas, tempos e espaços, identificando processos que contribuem para a formação de sujeitos éticos que valorizem a liberdade, a cooperação, a autonomia, o empreendedorismo, a convivência democrática e a solidariedade.' },
+      { code: 'EM13CHS502', area: 'CHS', desc: 'Analisar situações da vida cotidiana, estilos de vida, valores, condutas etc., desnaturalizando e problematizando formas de desigualdade, preconceito, intolerância e discriminação, e identificar ações que promovam os Direitos Humanos, a solidariedade e o respeito às diferenças e às liberdades individuais.' },
+      { code: 'EM13CHS503', area: 'CHS', desc: 'Identificar diversas formas de violência (física, simbólica, psicológica etc.), suas principais vítimas, as causas sociais, psicológicas e afetivas, os significados atribuídos pelos agressores e a perpetuação de diferentes preconceitos, analisando e promovendo ações pacíficas e o respeito.' },
+      { code: 'EM13CHS504', area: 'CHS', desc: 'Analisar e avaliar os impasses ético-políticos decorrentes das transformações culturais, sociais, históricas, científicas e tecnológicas no mundo contemporâneo e seus desdobramentos nas atitudes e nos valores de indivíduos, grupos sociais, sociedades e culturas.' },
+      { code: 'EM13CHS601', area: 'CHS', desc: 'Identificar e analisar as demandas e os protagonismos políticos, sociais e culturais de mulheres, povos originários, populações afrodescendentes, comunidades tradicionais (como quilombolas, ribeirinhos, indígenas) e da população LGBTQI+, considerando a sua participação em diferentes contextos e conjunturas.' },
+      { code: 'EM13CHS602', area: 'CHS', desc: 'Identificar e caracterizar a presença do paternalismo, do autoritarismo e do populismo na política, na sociedade e nas culturas brasileira e latino-americana, em períodos ditatoriais e democráticos, relacionando-os com as formas de organização e de articulação das sociedades em defesa da autonomia, da liberdade, do diálogo e da promoção da democracia.' },
+      { code: 'EM13CHS603', area: 'CHS', desc: 'Compreender as características das sociedades contemporâneas, atentando para a redefinição dos espaços de socialização e de participação política, considerando o impacto das migrações, das mudanças demográficas e do desenvolvimento de novas tecnologias para o mundo do trabalho e para as transformações sociais e culturais.' },
+      { code: 'EM13CHS604', area: 'CHS', desc: 'Discutir o papel dos organismos internacionais no contexto mundial, com vistas à elaboração de uma visão crítica sobre seus limites e suas formas de atuação nos países, considerando os aspectos positivos e negativos dessa atuação para as nações e para os cidadãos e seus impactos nas políticas locais.' },
+      { code: 'EM13CHS605', area: 'CHS', desc: 'Analisar os princípios da Declaração Universal dos Direitos Humanos, recorrendo às noções de justiça, igualdade e fraternidade, identificar os progressos e entraves à concretização desses direitos nas diversas sociedades contemporâneas e promover ações concretas diante da desigualdade e das violações desses direitos em diferentes espaços de vivência.' },
+      { code: 'EM13CHS606', area: 'CHS', desc: 'Analisar as características socioeconômicas da sociedade brasileira – com base na análise de documentos (dados, tabelas, mapas etc.) de diferentes fontes – e propor medidas para enfrentar os problemas identificados e construir uma sociedade mais próspera, justa e inclusiva, que valorize o protagonismo de seus cidadãos.' },
+      { code: 'EM13LGG101', area: 'LGG', desc: 'Compreender e analisar processos de produção e circulação de discursos, nas diferentes linguagens, para fazer escolhas fundamentadas em função de interesses pessoais e coletivos.' },
+      { code: 'EM13LGG102', area: 'LGG', desc: 'Analisar visões de mundo, conflitos de interesse, preconceitos e ideologias presentes nos discursos veiculados nas diferentes mídias, ampliando suas possibilidades de explicação, interpretação e intervenção crítica da/na realidade.' },
+      { code: 'EM13LGG103', area: 'LGG', desc: 'Analisar o funcionamento das linguagens, para interpretar e produzir criticamente discursos em textos de diversas semioses (visuais, verbais, sonoras, gestuais).' },
+      { code: 'EM13LGG104', area: 'LGG', desc: 'Utilizar as diferentes linguagens, levando em conta seus funcionamentos, para a compreensão e produção de textos e discursos em diversos campos de atuação social.' },
+      { code: 'EM13LGG201', area: 'LGG', desc: 'Utilizar as diversas linguagens (artísticas, corporais e verbais) em diferentes contextos, valorizando-as como fenômeno social, cultural, histórico, variável, heterogêneo e sensível aos contextos de uso.' },
+      { code: 'EM13LGG202', area: 'LGG', desc: 'Analisar interesses, relações de poder e perspectivas de mundo nos discursos das diversas práticas de linguagem (artísticas, corporais e verbais), compreendendo criticamente o modo como circulam na sociedade.' },
+      { code: 'EM13LGG203', area: 'LGG', desc: 'Analisar os diálogos e os processos de disputa por legitimidade nas práticas de linguagem e em suas produções (artísticas, corporais e verbais).' },
+      { code: 'EM13LGG204', area: 'LGG', desc: 'Dialogar e produzir entendimento mútuo, nas diversas linguagens (artísticas, corporais e verbais), com vistas ao interesse comum pautado em princípios e valores de equidade assentados na democracia e nos Direitos Humanos.' },
+      { code: 'EM13LGG301', area: 'LGG', desc: 'Participar de processos de produção individual e colaborativa em diferentes linguagens (artísticas, corporais e verbais), levando em conta seus funcionamentos, para produzir sentidos em diferentes contextos.' },
+      { code: 'EM13LGG302', area: 'LGG', desc: 'Posicionar-se criticamente diante de diversas visões de mundo presentes nos discursos em diferentes linguagens, levando em conta seus contextos de produção e de circulação.' },
+      { code: 'EM13LGG303', area: 'LGG', desc: 'Debater questões polêmicas de relevância social, analisando diferentes argumentos e opiniões, para formular, negociar e sustentar posições, frente à análise de perspectivas distintas.' },
+      { code: 'EM13LGG304', area: 'LGG', desc: 'Formular propostas, intervir e tomar decisões que levem em conta o bem comum e os Direitos Humanos, a consciência socioambiental e o consumo responsável em âmbito local, regional e global.' },
+      { code: 'EM13LGG401', area: 'LGG', desc: 'Analisar criticamente textos de modo a compreender e caracterizar as línguas como fenômeno (geo)político, histórico, social, cultural, variável, heterogêneo e sensível aos contextos de uso.' },
+      { code: 'EM13LGG402', area: 'LGG', desc: 'Empregar, nas interações sociais, a variedade e o estilo de língua adequados à situação comunicativa, ao(s) interlocutor(es) e ao gênero do discurso, respeitando os usos das línguas por esse(s) interlocutor(es) e sem preconceito linguístico.' },
+      { code: 'EM13LGG403', area: 'LGG', desc: 'Fazer uso do inglês como língua de comunicação global, levando em conta a multiplicidade e variedade de usos, usuários e funções dessa língua no mundo contemporâneo.' },
+      { code: 'EM13LGG501', area: 'LGG', desc: 'Investigar e explicar o papel de matrizes culturais constitutivas da identidade brasileira em suas diversas formas de expressão (música, literatura, dança, artes visuais, audiovisuais, gestuais, entre outras).' },
+      { code: 'EM13LGG502', area: 'LGG', desc: 'Analisar criticamente preconceitos, estereótipos e relações de poder presentes nas práticas corporais, adotando posicionamento contrário a qualquer manifestação de injustiça e desrespeito a direitos humanos e valores democráticos.' },
+      { code: 'EM13LGG503', area: 'LGG', desc: 'Vivenciar práticas corporais e significá-las em seu projeto de vida, como forma de autoconhecimento, autocuidado com o corpo e com a saúde, socialização e entretenimento.' },
+      { code: 'EM13LGG601', area: 'LGG', desc: 'Apreciar esteticamente as mais diversas produções artísticas e culturais, considerando suas características locais, regionais e globais, e mobilizar seus conhecimentos sobre as linguagens artísticas para dar significado e (re)construir produções autorais individuais e coletivas, de maneira crítica e criativa, com respeito à diversidade de saberes, identidades e culturas.' },
+      { code: 'EM13LGG602', area: 'LGG', desc: 'Fruir e apreciar esteticamente diversas manifestações artísticas e culturais, das locais às mundiais, assim como delas participar, de modo a aguçar continuamente a sensibilidade, a imaginação e a criatividade.' },
+      { code: 'EM13LGG603', area: 'LGG', desc: 'Expressar-se e atuar em processos criativos que integrem diferentes linguagens artísticas e referências estéticas e culturais, recorrendo a conhecimentos de naturezas diversas (artísticos, históricos, sociais e políticos) e desenvolvendo autoria individual e coletiva.' },
+      { code: 'EM13LGG701', area: 'LGG', desc: 'Explorar tecnologias digitais da informação e comunicação (TDIC), compreendendo seus princípios e funcionalidades, e utilizá-las de modo ético, criativo, responsável e adequado a práticas de linguagem em diferentes contextos.' },
+      { code: 'EM13LGG702', area: 'LGG', desc: 'Avaliar o impacto das tecnologias digitais da informação e comunicação (TDIC) na formação do sujeito e em suas práticas sociais, para fazer uso crítico dessa mídia em práticas de seleção, compreensão e produção de discursos em ambiente digital.' },
+      { code: 'EM13LGG703', area: 'LGG', desc: 'Utilizar diferentes linguagens, mídias e ferramentas digitais em processos de produção coletiva, colaborativa e projetos autorais em ambientes digitais.' },
+      { code: 'EM13LGG704', area: 'LGG', desc: 'Apropriar-se criticamente de processos de pesquisa e busca de informação, por meio de ferramentas e dos novos formatos de produção e distribuição do conhecimento na cultura de rede.' },
     ];
 
     let _habTarget = null;
@@ -460,12 +464,19 @@ Critérios:
       input.value = '';
     }
 
-    function renderHabChips(el) {
+    function renderHabChips(el) { /* v2-with-desc */
       const chips    = el.querySelector('.hab-chips');
       const printDiv = el.querySelector('.hab-print');
       const codes    = el._habCodes || [];
       chips.innerHTML = '';
+      const lines = [];
       codes.forEach(code => {
+        const entry = (typeof BNCC_HAB !== 'undefined') ? BNCC_HAB.find(h => h.code === code) : null;
+        const desc  = entry ? entry.desc : '';
+
+        const row = document.createElement('div');
+        row.className = 'hab-row';
+
         const chip = document.createElement('span');
         chip.className = 'hab-chip';
         const lbl = document.createElement('span');
@@ -473,7 +484,7 @@ Critérios:
         const rm = document.createElement('button');
         rm.className = 'hab-chip-rm';
         rm.title = 'Remover';
-        rm.textContent = '×';
+        rm.textContent = '\u00d7';
         rm.onclick = e => {
           e.stopPropagation();
           el._habCodes = el._habCodes.filter(c => c !== code);
@@ -481,9 +492,18 @@ Critérios:
         };
         chip.appendChild(lbl);
         chip.appendChild(rm);
-        chips.appendChild(chip);
+
+        const descEl = document.createElement('span');
+        descEl.className = 'hab-desc';
+        descEl.textContent = desc;
+
+        row.appendChild(chip);
+        row.appendChild(descEl);
+        chips.appendChild(row);
+
+        lines.push(desc ? code + ' \u2014 ' + desc : code);
       });
-      printDiv.textContent = codes.join('\n');
+      printDiv.textContent = lines.join('\n');
     }
 
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeHabModal(); });
